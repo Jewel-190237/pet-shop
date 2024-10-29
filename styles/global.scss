@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.pet-container {
+  @apply max-w-[1320px] mx-auto px-6 lg:px-0
+}
+
+.description {
+  @apply font-lora text-sm md:text-[16px] font-normal leading-[100%] md:leading-[130%] xl:leading-[170%]
+}
+
+.heading1 {
+  @apply font-laila  text-[24px] md:text-3xl lg:text-[40px] xl:text-5xl capitalize font-bold text-center
+}
+
+.heading2 {
+  @apply font-laila font-bold text-[18px] lg:text-xl xl:text-[24px] !leading-[130%] capitalize
+}
+
+// latest post & articles related styles
+.dog-image {
+  border-radius: 20px 20px 0px 0px;
+}
+
+// Transform a Life related styles
+.pet-button {
+  @apply px-6 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[18px] font-lora border border-[#E65F33] hover:bg-[#E65F33] text-white rounded-[40px] transition-transform duration-300 hover:scale-105
+}
+
+.swipper-button {
+  @apply text-[#44433F] hover:text-primary transition-all duration-300
+}
+.team-social-styles{
+  @apply w-10 h-10 rounded-full bg-white text-primary hover:bg-primary hover:text-white flex items-center justify-center transition-all duration-300
+}
+
+
+
+/* ShopPeat.css */
