@@ -9,9 +9,9 @@ const TeamCard = ({image, socialData, name, title}) => {
 
             <div className='flex flex-col justify-end items-end p-5 gap-4 -mt-48 opacity-0 group-hover:opacity-100 transition-all duration-300'>
                 {socialData.map((data, index) => (
-                    <div key={index} className='team-social-styles'>
-                        <Link href={data.link}>{data.icon}</Link>
-                    </div>
+                    <Link href={data.link} key={index} className='team-social-styles'>
+                        {data.icon}
+                    </Link>
                 ))}
             </div>
 

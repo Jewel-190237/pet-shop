@@ -14,11 +14,15 @@
 }
 
 .heading1 {
-  @apply font-laila  text-[24px] md:text-3xl lg:text-[40px] xl:text-5xl capitalize font-bold text-center
+  @apply font-laila text-[24px] md:text-3xl lg:text-[40px] xl:text-5xl capitalize font-bold text-center
 }
 
 .heading2 {
   @apply font-laila font-bold text-[18px] lg:text-xl xl:text-[24px] !leading-[130%] capitalize
+}
+
+.heading3 {
+  @apply font-laila font-bold text-xl lg:text-[24px] xl:text-[28px] !leading-[130%] capitalize
 }
 
 // latest post & articles related styles
@@ -31,13 +35,105 @@
   @apply px-6 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[18px] font-lora border border-[#E65F33] hover:bg-[#E65F33] text-white rounded-[40px] transition-transform duration-300 hover:scale-105
 }
 
+.check-button {
+  @apply px-6 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[18px] font-lora border border-[#E65F33] hover:bg-[#E65F33] !text-primary hover:!text-white rounded-[20px] transition-transform duration-300 hover:scale-105 capitalize
+}
+
 .swipper-button {
   @apply text-[#44433F] hover:text-primary transition-all duration-300
 }
-.team-social-styles{
+
+.team-social-styles {
   @apply w-10 h-10 rounded-full bg-white text-primary hover:bg-primary hover:text-white flex items-center justify-center transition-all duration-300
 }
 
+// Testimonials related styles
+.review-card {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
 
+// Online Reservation related styles
+.online-heading {
+  @apply text-[#2B2B2B] text-sm md:text-[16px] lg:text-[18px] font-semibold font-lora capitalize
+}
 
-/* ShopPeat.css */
+:where(.css-dev-only-do-not-override-ni1kz0).ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  width: 100%;
+  height: 100%;
+  padding: 25px 25px;
+}
+
+.ant-select .ant-select-arrow {
+  color: black;
+  height: 16px;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.ant-select .ant-select-selection-placeholder {
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ant-picker {
+  padding: 15px 15px 15px;
+
+}
+
+.ant-select-selector,
+.ant-select-selector:focus {
+  border-color: #D9D9D9 !important;
+  box-shadow: none !important;
+}
+
+.ant-select-selector:hover,
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #D9D9D9 !important;
+  box-shadow: none !important;
+}
+
+.ant-picker-focused {
+  border-color: #D9D9D9 !important;
+  box-shadow: none !important;
+}
+
+// service related styles
+.service-heading {
+  @apply font-laila text-xl md:text-2xl lg:text-[28px] xl:text-[32px] font-bold capitalize
+}
+
+/* Custom radio button styling */
+.custom-radio {
+  /* Hide the default radio */
+  appearance: none;
+  width: 1.25rem;
+  /* Custom size */
+  height: 1.25rem;
+  border: 2px solid #E65F33;
+  /* Border color */
+  border-radius: 50%;
+  /* Makes it round */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Inner circle when checked */
+.custom-radio:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #E65F33;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// team2-social-styles
+.team2-social-styles {
+  @apply w-10 h-10 rounded-full bg-white text-[#44433F] hover:text-primary flex items-center justify-center transition-all duration-300
+}
