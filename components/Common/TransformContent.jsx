@@ -1,5 +1,5 @@
+'use client';
 import React from 'react';
-
 const TransformContent = ({bg, heading, description}) => {
     return (
         <section

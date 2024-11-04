@@ -14,7 +14,7 @@
 }
 
 .heading1 {
-  @apply font-laila text-[24px] md:text-3xl lg:text-[40px] xl:text-5xl capitalize font-bold text-center
+  @apply font-laila  text-[24px] md:text-3xl lg:text-[40px] xl:text-5xl capitalize font-bold text-center
 }
 
 .heading2 {
@@ -32,7 +32,7 @@
 
 // Transform a Life related styles
 .pet-button {
-  @apply px-6 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[18px] font-lora border border-[#E65F33] hover:bg-[#E65F33] text-white rounded-[40px] transition-transform duration-300 hover:scale-105
+  @apply px-6 lg:px-8 py-3 lg:py-4 text-[14px] lg:text-[18px] font-lora border border-[#E65F33] hover:bg-[#E65F33] text-primary hover:text-white rounded-[40px] transition-transform duration-300 hover:scale-105
 }
 
 .check-button {
@@ -43,15 +43,138 @@
   @apply text-[#44433F] hover:text-primary transition-all duration-300
 }
 
-.team-social-styles {
+.team-social-styles{
   @apply w-10 h-10 rounded-full bg-white text-primary hover:bg-primary hover:text-white flex items-center justify-center transition-all duration-300
 }
 
-// Testimonials related styles
-.review-card {
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+.explore {
+  .swiper-pagination {
+    display: flex;
+    position: static;
+    justify-content: flex-start; /* Align to the start (left) */
+    margin-top: 60px; /* Adjust spacing from bottom as needed */
+    width: 200px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 100%;
+    opacity: 1; /* Ensures bullets are fully visible */
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 40px !important;
+    height: 15px !important;
+    background: #FF6F3F; /* Keep active color consistent */
+    border-radius: 8px !important;
+  }
+}
+
+.hero2 {
+  .swiper-pagination {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: auto;
+    gap: 10px; 
+    width: 120px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 8px);
+    top: 50%;
+    left: auto;
+    width: 10%;
+}
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease; /* Smooth transition for active bullet */
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 18px;
+    height: 18px;
+    background: #ff6f3f;
+    border-radius: 50%;
+  }
+}
+
+.feature2 {
+  /* Center the pagination in the middle */
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    position: relative; /* Removes position conflicts */
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 100%;
+    opacity: 1; /* Ensures bullets are fully visible */
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 20px !important;
+    height: 20px !important;
+    background: #FF6F3F; /* Keep active color consistent */
+    border-radius: 100px !important;
+  }
+}
+
+.features {
+  /* Center the pagination in the middle */
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    position: relative; /* Removes position conflicts */
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    border-radius: 100%;
+    opacity: 1; /* Ensures bullets are fully visible */
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 40px !important;
+    height: 15px !important;
+    background: #FF6F3F; /* Keep active color consistent */
+    border-radius: 8px !important;
+  }
+}
+
+.bg-container {
+  background-image: url('/home1/looking/bg.svg');
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the background image */
+  position: relative;
+  z-index: 20;
+}
+
+// Service related styles
+.service-heading {
+  @apply font-laila text-xl md:text-2xl lg:text-[28px] xl:text-[32px] font-bold capitalize
 }
 
 // Online Reservation related styles
@@ -100,12 +223,19 @@
   box-shadow: none !important;
 }
 
-// service related styles
-.service-heading {
-  @apply font-laila text-xl md:text-2xl lg:text-[28px] xl:text-[32px] font-bold capitalize
+// Testimonials related styles
+.review-card {
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
-/* Custom radio button styling */
+// team2-social-styles
+.team2-social-styles {
+  @apply w-10 h-10 rounded-full bg-white text-[#44433F] hover:text-primary flex items-center justify-center transition-all duration-300
+}
+
+/* Health3 related styling */
 .custom-radio {
   /* Hide the default radio */
   appearance: none;
@@ -131,9 +261,4 @@
   background-color: #E65F33;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-}
-
-// team2-social-styles
-.team2-social-styles {
-  @apply w-10 h-10 rounded-full bg-white text-[#44433F] hover:text-primary flex items-center justify-center transition-all duration-300
 }

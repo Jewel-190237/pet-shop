@@ -4,9 +4,9 @@ import { DatePicker, Select } from 'antd';
 import { MdPets } from "react-icons/md";
 import { FaDog, FaCalendarAlt } from "react-icons/fa";
 
-const bg = '/home1/Daycare/bg.svg';
+// const bg = '/home1/Daycare/bg.svg';
 
-const DayCare = () => {
+const DayCare = ({bg}) => {
     const [checkInDate, setCheckInDate] = useState(null);
     const [checkOutDate, setCheckOutDate] = useState(null);
 
